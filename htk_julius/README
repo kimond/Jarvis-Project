@@ -1,0 +1,21 @@
+VoxForge & Julius Quick Start.
+
+This Tar file contains everything you need to get Julius working:
+ * Julius Run-time engine executable;
+ * VoxForge Acoustic Model files;
+ * VoxForge sample Grammar files.
+
+Simply extract the gzipped tar file to a directory, and execute the following command:
+ 
+ $./julius -input mic -C Sample.jconf
+
+For information on the Julius grammar syntax, see the enclosed GRAMMAR_NOTES.
+
+Note that the Acoustic Models are still 'alpha'.  As a result, the quality of speech recognition is 
+only fair.  This is not a fault of the Julius Speech Recognition Engine, it is because we need much
+more GPL transcribed speech audio to create decent quality Acoustic Models.  So please take the time 
+to submit some transcribed speech to www.voxforge.org.
+
+thanks,
+
+the VoxForge team.
