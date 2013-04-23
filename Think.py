@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 from Motorium import *
+from DbCom import *
 import sys
 import random
 
@@ -10,6 +11,7 @@ class Think(object):
         action = {
             'sarah': self.say,
             'open': self.confirm,
+            'add note': self.testdbcom,
             'bye': self.close,
         }.get(command, self.dontknow)
         action()
@@ -23,6 +25,9 @@ class Think(object):
 
     def dontknow(self):
         Motorium.say("Sorry, I do not know this command.")
+
+    def testdbcom(self):
+        dbcom = DbCom()
 
     def confirm(self):
         rep_id = random.randrange(1, 4)

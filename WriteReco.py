@@ -15,3 +15,4 @@ class WriteReco(threading.Thread):
         self.result = raw_input("What you want to do ? \n")
         if(self.result != ""):
             self.think.checkcommand(self.result)
+            

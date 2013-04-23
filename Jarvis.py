@@ -4,7 +4,6 @@ from WriteReco import *
 from SpeechServer import *
 
 
-
 class Jarvis(object):
 
     def __init__(self):
